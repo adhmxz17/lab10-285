@@ -20,10 +20,10 @@ public class testSelectionSort {
         arr[1] = 9;
         arr[2] = 7;
         arr[3] = 10;
-        arr[4] = 3;
+        arr[4] = 4;
 
         int[] Sortedarr = new int[5];
-        Sortedarr[0] = 3;
+        Sortedarr[0] = 4;
         Sortedarr[1] = 7;
         Sortedarr[2] = 8;
         Sortedarr[3] = 9;
@@ -32,7 +32,7 @@ public class testSelectionSort {
         /** add tests to check for this unit test **/
         SelectionSort sortArray = new SelectionSort();
         arr = sortArray.basicSelectionSort(arr);
-        assertTrue("The first value within the sorted is 3", arr[0] == Sortedarr[0]);
+        assertTrue("The first value within the sorted is 4", arr[0] == Sortedarr[0]);
         assertTrue("The second value within the sorted is 7", arr[1] == Sortedarr[1]);
         assertTrue("The third value within the sorted is 8", arr[2] == Sortedarr[2]);
         assertTrue("The fourth value within the sorted is 9", arr[3] == Sortedarr[3]);
@@ -48,14 +48,14 @@ public class testSelectionSort {
         arr[1] = -9;
         arr[2] = -7;
         arr[3] = -11;
-        arr[4] = -2;
+        arr[4] = -1;
 
         int[] Sortedarr = new int[5];
         Sortedarr[0] = -11;
         Sortedarr[1] = -9;
         Sortedarr[2] = -8;
         Sortedarr[3] = -7;
-        Sortedarr[4] = -2;
+        Sortedarr[4] = -1;
 
 
         SelectionSort sortArray = new SelectionSort();
@@ -64,7 +64,7 @@ public class testSelectionSort {
         assertTrue("The second value within the sorted is -9", arr[1] == Sortedarr[1]);
         assertTrue("The third value within the sorted is -8", arr[2] == Sortedarr[2]);
         assertTrue("The fourth value within the sorted is -7", arr[3] == Sortedarr[3]);
-        assertTrue("The fifth value within the sorted is -2", arr[4] == Sortedarr[4]);
+        assertTrue("The fifth value within the sorted is -1", arr[4] == Sortedarr[4]);
 
 
     }
